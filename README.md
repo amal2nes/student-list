@@ -65,13 +65,21 @@ It is never a good idea to let a user fall through your app and get no response 
 Now that we have made lots of changes and, through this work, learned more about intent of our code, it is time to make another naming and comment pass. Our program really is specialized around performing operations on the very specific student-list. That's ok, there isn't anything wrong with that. In this update, we introduce names that have more meaning to this domain.  At this point it is also important to document things we would improve if given more time. This updates uses the common "TODO:" marker comments to document to document these. Finally, one opportunity that was missed with the `Constants.cs ` class was to write proper triple-slash `///` comments. By doing this, the constants are described in full during code (dot) completion.
 
 ## update-11 One More Thing
-Brittle code - Contains -> StartsWith
 
-A better way to search with Linq
+In the preceding update, we left behind comments with "TODO:" markers for any updates we want to make in the furture. This update takes care of the following updates:
 
-### update-11 One last Naming and Comment pass
-More student-centric because no matter how much we pretend, the code is very specific to our current schema.
-TODO for future work
+* Remove brittle code caused by using String.Contains, when we meant String.StartsWith
+
+* Simplify search usign LINQ
+
+* Tidy comments.
+
+
+## Next Steps
+
+We have come a long way on this journey to improve the student-list code we inherited. The code is no more robust, reads better and is set up for more improvements. The remaining TODO items are a godo starting point. 
+
+
 
 
 
