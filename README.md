@@ -36,7 +36,7 @@ We can convey a lot of information in a well-crafted variable, method or class n
 
 ### update-4 Refactor Common Code
 
-At this point we can clearly see some repetition on our code - each conditional block is retrieving data from a stream and writing back to a file. These operations are good refactoring candidates and in this update, we'll move the repeating code into its own methods. Since streams are resource-heavy object, we will also make sure to release those resources with the help of the 'using' construct. 
+At this point we can clearly see some repetition in our code - each conditional block is retrieving data from a stream and writing back to a file. These operations are good refactoring candidates and in this update, we'll move the repetitive code into its own methods. Since streams use system resources, we will also make sure to release those resources with the help of the `using` construct.
 
 ### update-5 Remove String Literals
 
