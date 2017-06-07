@@ -24,7 +24,7 @@ You should then explore the code to see what other options are available, how th
 
 ### update-1 Consistency
 
-Coding style matters in a project because it removes one more thing to worry about as you try to rad and understand the code. In this update, we'll re-position some brackets to make sure the style is consistent. We'll also make sure there is space above code comments. All of this makes the source code easier to read at a glance. 
+Coding style matters in a project because it removes one more thing to worry about as you try to read and understand the code. In this update, we'll re-position some brackets to make sure the style is consistent. We'll also make sure there is space above code comments. All of this makes the source code easier to read at a glance. 
 
 ### update-2 Guard Clauses
 
