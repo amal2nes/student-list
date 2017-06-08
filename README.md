@@ -48,6 +48,8 @@ This update also resulted in us finding a bug. When we call UpdateContent to add
 
 Another small, but important, change is to prepend each argument with a minus `-` sign. This is a more common syntax for command-line arguments. 
 
+> *Code Smell* is a term of endearment in the Software Development world we give to code or code structures that indicate that something is not quite right. The example here is string literals. In this case, they give the impression that the developer wasn't quite finished making the code readable and self-describing. Smells often occur with the structure of a piece of software. If a good way of structuring or implementing something is defined as a pattern, a smell can lead to, or result, in anti-patterns. If you are interested in learning more about this topic, start with the [Code Smell Wikipedia page](https://en.wikipedia.org/wiki/Code_smell).
+
 ### update-6 Eliminate Temporary Variables
 
 When reviewing variables, ask yourself whether each one is needed. How often is the variable used and does it add value in terms of clarification of intent? In this update, we eliminate two variables that add no real value. Instead of storing a result in a variable, we return the result directly. In another instance, it is as easy to pass DateTime.Now to a method as it is to create a variable to hold that value. 
