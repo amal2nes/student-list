@@ -40,9 +40,13 @@ At this point we can clearly see some repetition in our code - each conditional 
 
 ### update-5 Remove String Literals
 
-Scanning our Program.cs file we can see lots of quotation marks. This is a potential code smell and can often lead to coding  errors. String literals can also lead to confusion. The approach I've taken here is to move the main strings in use into a Contants class. Not only does that mean I have just one location where I need to make an update, but I can also describe these entities independently of the length of the string literal itself. 
+Examining our **Program.cs** file in the **students-list** project, we can see lots of quotation marks. This is a potential *code smell* and can often lead to coding errors. String literals can also lead to confusion. For example, the command-line arguments `a` `r` and `?` don't mean much on first inspection. It would be much nicer to have a descriptive name for these literals greet you instead. 
 
-This improvement led to us finding a bug. When adding an entry and calling `UpdateContent`, the entry was separated by a comma with no space after it. However, the code to count entries currently counts words based on space boundaries. This leads to a wrong count. By using the same delimiter constant when reading or writing to the list, we eliminate this problem. (The word counting method will get its own update further in this tutorial).
+In this update, we turn the string literals into constants and group them together into a Constants class. Not only does that mean I have just one location where I need to make an update, but I can also describe these entities independently of the length of the string literal itself. For example, the argument `a` now becomes Constants.ShowAll, which is a big readability gain. 
+
+This update also resulted in us finding a bug. When we call UpdateContent to add an entry, the entry was separated by a comma with no space after it. However, the code to count entries currently counts words based on space boundaries. This leads to a wrong count. By using the same delimiter constant (`StudentEntryDelimiter`) when reading or writing to the list, we eliminate this problem. (The word counting method will get its own update further in this tutorial).
+
+Another small, but important, change is to prepend each argument with a minus `-` sign. This is a more common syntax for command-line arguments. 
 
 ### update-6 Eliminate Temporary Variables
 
