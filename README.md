@@ -60,7 +60,8 @@ A control-flow variable is an extraneous variable that is used to influence the 
 
 ### update-8 Simplification (of count operation)
 
-It's time to fix that count operation! As we saw previously, the code is buggy and overly complex because we know the structure of our source data. We're not actually counting words, we're figuring out how many students are in the list. This update uses the fact that the entries are separated by design with a comma. 
+Simplification is a great way to improve the readability of your code and make it easier to maintain. When you inherit a  project, you should look for ways to simplify and refactor code as early as possible. Removing code that isn't needed or code that is not used (dead code) is a great simplification opportunity.  In this update, we will simplify the code used to count how many students are stored in **student-list.txt**.  We're not actually counting words, we're figuring out how many students are in the list. This update uses the fact that the entries are separated by design with a comma.
+
 
 ### update-9 Handle invalid arguments
 
