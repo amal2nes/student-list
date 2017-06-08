@@ -56,7 +56,7 @@ When reviewing variables, ask yourself whether each one is needed. How often is 
 
 ### update-7 Eliminate Control Flow Variables
 
-See the variable `done`? It is called a control-flow variable because it is trying to control flow of our code. Whenever you see a variable like this, be suspicious. It is likely that we can re-structure to flow to make it go away. For example, in this example we introduce a `break` to exit the for loop when we have found what we're looking for. You will notice that during  this re-write we also discovered a bug in our code because of missing brackets around the `if` check. 
+A control-flow variable is an extraneous variable that is used to influence the flow of code. Typically our code branches based on conditions or state. What we're talking about here is unnecessary use of variables as part of this control. Whenever you see a variable like this, be suspicious. It is likely that we can re-structure the flow of logic in our code  to make these type of variables go away. For example, in this example we introduce a break to exit a for loop when we have found what we're looking for. You will notice that during this re-write we also discovered a bug in our code because of missing brackets around the `if` check.
 
 ### update-8 Simplification (of count operation)
 
