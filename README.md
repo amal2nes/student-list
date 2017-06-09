@@ -83,7 +83,13 @@ Ok, so perhaps we are exaggerating the crisis that ensues when the user encounte
 
 ## update-10 Naming and Comment Pass
 
-Now that we have made lots of changes and, through this work, learned more about intent of our code, it is time to make another naming and comment pass. Our program really is specialized around performing operations on the very specific student-list. That's ok, there isn't anything wrong with that. In this update, we introduce names that have more meaning to this domain.  At this point it is also important to document things we would improve if given more time. This updates uses the common "TODO:" marker comments to document to document these. Finally, one opportunity that was missed with the `Constants.cs ` class was to write proper triple-slash `///` comments. By doing this, the constants are described in full during code (dot) completion.
+Now that we have made lots of changes and, through this work, learned more about the intent of our code, it's time to make another naming and comment pass. This is a cheap and relatively safe update to make and has the potential to make a real impact on the readability and maintainability of our code. 
+
+By now, we realize that our program  specializes in performing operations on the very specific student-list. That's ok, there isn't anything wrong with that. Scenarios like this can often happen in Line Of Business (LOB) apps inside an organization where a department or team has a process, pipeline or experience that could benefit from automation.
+
+In this update, we introduce names that mean more in the student list management domain.  At this point it is also important to document things we would improve if given more time. This updates prepends the common **TODO:** marker in comments to document things to do at a later time. 
+
+Finally, one opportunity that we missed with the `Constants.cs ` class was to write proper triple-slash `///` comments. By doing this, the constants are described in full during code (dot) completion.
 
 ## update-11 One More Thing
 
