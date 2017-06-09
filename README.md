@@ -93,14 +93,13 @@ Finally, one opportunity that we missed with the `Constants.cs ` class was to wr
 
 ## update-11 One More Thing
 
-In the preceding update, we left behind comments with "TODO:" markers for any updates we want to make in the furture. This update takes care of the following updates:
+In the preceding update, we left behind comments prepended with **TODO** markers for any updates we want to make in the future. let's tackle a couple of those just to clear a few remaining code smells. This update improves our code in the following ways:
 
 * Remove brittle code caused by using String.Contains, when we meant String.StartsWith
 
-* Simplify search usign LINQ
+* Simplify search using LINQ
 
 * Tidy comments.
-
 
 ## Next Steps
 
