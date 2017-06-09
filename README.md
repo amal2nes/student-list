@@ -65,7 +65,21 @@ Simplification is a great way to improve the readability of your code and make i
 
 ### update-9 Handle invalid arguments
 
-It is never a good idea to let a user fall through your app and get no response as to why nothing happened. When you call this program with the wrong parameter the program returns silently. This update checks for this case and shows the usage message to the user. Since showing the usage message now happens more than once, we'll refactor it into a method.
+It is never a good idea to let a user fall through your app without telling them what happened. To see this issue in action, just run the app from your command-line as follows:
+
+> `dotnet run unknown-argument`
+
+The user receives a silent response and that's very frustrating to the user, who must surely be  asking all kinds of questions such as:
+
+* *"Did it work?"*
+
+* *"What have I done?"*
+
+* *"Is it me, or that program?"*
+
+Ok, so perhaps we are exaggerating the crisis that ensues when the user encounters this problem. However, we as developers should always be looking for ways to build a quality relationship with the people how use our software. In this case, it means handling invalid arguments and that's our update for this lesson. 
+
+ When you call this program with the wrong parameter, the program returns silently. This update checks for this case and shows the usage message to the user. Since showing the usage message now happens more than once, we'll refactor it into a method.
 
 ## update-10 Naming and Comment Pass
 
