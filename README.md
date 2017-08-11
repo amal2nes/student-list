@@ -1,8 +1,8 @@
 # Overview
 
-This application takes the developer through the process of making a project easier to understand by making a series of updates. It is part of the [Writing Professional Code](https://www.edx.org/school/microsoft) course on edX. 
+This application takes you through the process of making a project easier to understand by making a series of updates. The exercise is part of the [Writing Professional Code](https://www.edx.org/course/writing-professional-code-microsoft-dev275x) course on edX. 
 
-> The order in which you perform these updates is not important. We are trying to show a set of smells that can exist in a small codebase such as this one and how you can make things better. 
+> The order in which you perform these updates is not important. We are trying to show a set of *code smells* that can exist in a codebase such as this one and how you can make things better. 
 
 
 # Commits/ Tutorial Outline
@@ -28,7 +28,7 @@ Coding style matters in a project because it removes one more thing to worry abo
 
 ### update-2 Guard Clauses
 
-If you can bail early from a method, you should consider doing so. It is a good technique for handling obvious error conditions in a code path and helps the reader of your code "park" those paths in their head. In this update, we will make sure to check whether the user is calling the program with the correct argument count before proceeding.
+If you can exit early from a method, you should consider doing so. It's a good technique for handling obvious error conditions in a code path and helps the reader of your code "park" those paths in their head. In this update, we verify that the user is calling the program with the correct argument count before proceeding.
 
 ### update-3 It's all in the Name
 
@@ -103,7 +103,9 @@ In the preceding update, we left behind comments prepended with **TODO** markers
 
 ## Next Steps
 
-We have come a long way on this journey to improve the student-list code we inherited. The code is no more robust, reads better and is set up for more improvements. The remaining TODO items are a godo starting point. 
+We have come a long way on this journey to improve the student-list code we inherited. The code is now more robust, reads better and is set up for more improvements. The remaining TODO items will be a godo place to start.
+
+
 
 
 
